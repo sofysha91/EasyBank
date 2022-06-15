@@ -1,0 +1,229 @@
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+/* General styles*/
+
+
+body {
+    font-family: 'Public Sans', sans-serif;
+
+    main {
+        overflow: hidden;
+        min-height: 100vh;
+    }
+}
+
+.btn-green {
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: $white;
+    max-width: 200px;
+}
+
+/*Header*/
+header {
+    background-color: $white;
+    position: relative;
+    z-index: 9;
+
+    .navbar {
+        background-color: $white;
+
+        .custom-nav {
+            position: absolute;
+            z-index: 99999;
+            top: 90px;
+            left: 10%;
+            width: 80%;
+            padding: 32px;
+            margin: 0px auto;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+    }
+}
+
+
+/*Banner*/
+.banner {
+    background-color: $white;
+    overflow-x: hidden;
+
+    #bg-image {
+        width: 100%;
+        position: relative;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .image-layer {
+        position: absolute;
+        top: 0;
+
+        img {
+            max-width: 100%;
+            right: 0;
+        }
+
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        p{
+            color:$grayish-blue;
+        }
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: $dark-blue;
+    color: $white;
+    text-align: center;
+
+    .logo {
+        filter: brightness(5);
+    }
+
+    .social {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        padding: 0 32px;
+    }
+
+    .footer-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        .items {
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+
+    .cta {
+        margin: 30px auto;
+
+        .btn-green {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+/*Bootstrap*/
+div#navbarNav {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*Responsive*/
+@media only screen and (min-width:768px) {
+    header{
+        .navbar{
+            .custom-nav {
+                position: initial;
+                top: 0;
+                left: 0%;
+                width: 100%;
+                padding: 0;
+                border-radius: 0;
+                text-align: left;
+            }
+        }
+    }
+    .banner {
+        .image-layer {
+            img {
+                right: -150px;
+                position: relative;
+                max-width: 85%;
+            }
+
+        }
+
+        .banner-content {
+            text-align: left;            
+        }
+    }
+
+    footer {
+        text-align: left;
+
+        .cta {
+            margin: 0 auto;
+        }
+
+        .social {
+            padding: 0 32px 0 0;
+        }
+    }
+
+}
+
+
+
+/* --------------------aqui lalo --------------------------------*/
+#articles-section{
+    background-color: #FBFBFB;
+
+}
+
+#offer-section{
+    background-color: #F4F4F6;
+
+}
+
+#offer-card{
+    background-color: hsla(0, 0%, 0%, 0.0);
+}
+
+#offer-card img{
+    max-width: 20%;
+}
+
+.card-text{
+    color: #9698a6;;
+}
+
+#photo-author{
+    color: #9698a6;
+    font-size: .75rem;
+}
+
+#offer-section-title{
+    color: $dark-blue ;
+}
+main{
+    background: rgb(244,244,246);
+    background: linear-gradient(180deg, rgba(244,244,246,1) -0%, rgba(244,244,246,1) 82%, rgba(251,251,251,1) 100%);
+}
+
+@media only screen and (max-width:768px) {
+
+    #offer-img{
+        align-self: center;
+    }
+}

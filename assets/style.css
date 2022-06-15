@@ -1,0 +1,224 @@
+/* General styles*/
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+body main {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.btn-green {
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+  color: white;
+  max-width: 200px;
+}
+
+/*Header*/
+header {
+  background-color: white;
+  position: relative;
+  z-index: 9;
+}
+
+header .navbar {
+  background-color: white;
+}
+
+header .navbar .custom-nav {
+  position: absolute;
+  z-index: 99999;
+  top: 90px;
+  left: 10%;
+  width: 80%;
+  padding: 32px;
+  margin: 0px auto;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Banner*/
+.banner {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.banner #bg-image {
+  width: 100%;
+  position: relative;
+}
+
+.banner #bg-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.banner .image-layer {
+  position: absolute;
+  top: 0;
+}
+
+.banner .image-layer img {
+  max-width: 100%;
+  right: 0;
+}
+
+.banner .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-content p {
+  color: #9698a6;
+}
+
+/*Footer*/
+footer {
+  background-color: #2d314d;
+  color: white;
+  text-align: center;
+}
+
+footer .logo {
+  -webkit-filter: brightness(5);
+          filter: brightness(5);
+}
+
+footer .social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto;
+  padding: 0 32px;
+}
+
+footer .footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-nav .items {
+  margin-bottom: 10px;
+}
+
+footer .footer-nav .items a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .cta {
+  margin: 30px auto;
+}
+
+footer .cta .btn-green {
+  margin-bottom: 20px;
+}
+
+/*Bootstrap*/
+div#navbarNav {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Responsive*/
+@media only screen and (min-width: 768px) {
+  header .navbar .custom-nav {
+    position: initial;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    text-align: left;
+  }
+  .banner .image-layer img {
+    right: -150px;
+    position: relative;
+    max-width: 85%;
+  }
+  .banner .banner-content {
+    text-align: left;
+  }
+  footer {
+    text-align: left;
+  }
+  footer .cta {
+    margin: 0 auto;
+  }
+  footer .social {
+    padding: 0 32px 0 0;
+  }
+}
+
+/* --------------------aqui lalo --------------------------------*/
+#articles-section {
+  background-color: #FBFBFB;
+}
+
+#offer-section {
+  background-color: #F4F4F6;
+}
+
+#offer-card {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#offer-card img {
+  max-width: 20%;
+}
+
+.card-text {
+  color: #9698a6;
+}
+
+#photo-author {
+  color: #9698a6;
+  font-size: .75rem;
+}
+
+#offer-section-title {
+  color: #2d314d;
+}
+
+main {
+  background: #f4f4f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f6), color-stop(82%, #f4f4f6), to(#fbfbfb));
+  background: linear-gradient(180deg, #f4f4f6 0%, #f4f4f6 82%, #fbfbfb 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  #offer-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
